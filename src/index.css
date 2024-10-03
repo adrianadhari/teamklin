@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.color-active {
+    @apply bg-[#333333] transition duration-150 ease-in text-white
+}
