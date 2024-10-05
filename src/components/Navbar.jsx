@@ -173,7 +173,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#home"
+                href="/Company Profile PT KLIN dan PT ASTEK - 2024.pdf" download
                 className=" ease-in duration-200"
                 onClick={hideMenu}
               >
