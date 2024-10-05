@@ -7,10 +7,10 @@ import monitoring from "../assets/img/business-scope/monitoring-lingkungan.png";
 
 const BusinessScope = () => {
   return (
-    <div className="py-32" id="business">
+    <section className="py-32" id="business">
       <div className="container text-center">
         <h1 className="font-bold text-[40px] mb-10">Lingkup Bisnis</h1>
-        <div className="grid grid-cols-3 place-items-start justify-items-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 place-items-start justify-items-center gap-8">
           <div className="space-y-5">
             <img
               src={pemulihan}
@@ -94,7 +94,7 @@ const BusinessScope = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

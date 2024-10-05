@@ -6,14 +6,17 @@ import logo from "../assets/img/logo.png";
 
 const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const [changeColor, setChangeColor] = useState(false);
+
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
+
   const hideMenu = () => {
     setMenuVisible(false);
   };
 
-  const [changeColor, setChangeColor] = useState(false);
   const changeBackgroundColor = () => {
     if (window.scrollY > 50) {
       setChangeColor(true);
@@ -21,10 +24,31 @@ const Navbar = () => {
       setChangeColor(false);
     }
   };
+
+  const handleScroll = () => {
+    const sections = document.querySelectorAll("section"); // Assuming each section is wrapped in <section> tag
+    let currentSection = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100; // Offset for navbar height
+      if (window.scrollY >= sectionTop) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    setActiveSection(currentSection);
+  };
+
   useEffect(() => {
     changeBackgroundColor();
     window.addEventListener("scroll", changeBackgroundColor);
-  });
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", changeBackgroundColor);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
@@ -41,9 +65,11 @@ const Navbar = () => {
         <div>
           <ul className="hidden lg:flex items-center gap-x-10 font-bold">
             <li>
-              <a
+            <a
                 href="#home"
-                className="hover:text-color-secondary ease-in duration-200"
+                className={`hover:border-b-4 pb-3 ease-in duration-200 ${
+                  activeSection === "home" ? "pb-3 border-b-4" : ""
+                }`}
               >
                 Home
               </a>
@@ -51,7 +77,9 @@ const Navbar = () => {
             <li>
               <a
                 href="#business"
-                className="hover:text-color-secondary ease-in duration-200"
+                className={`hover:border-b-4 pb-3 ease-in duration-200 ${
+                  activeSection === "business" ? "pb-3 border-b-4" : ""
+                }`}
               >
                 Business Scope
               </a>
@@ -59,7 +87,9 @@ const Navbar = () => {
             <li>
               <a
                 href="#project"
-                className="hover:text-color-secondary ease-in duration-200"
+                className={`hover:border-b-4 pb-3 ease-in duration-200 ${
+                  activeSection === "project" ? "pb-3 border-b-4" : ""
+                }`}
               >
                 Project Portfolio
               </a>
@@ -67,15 +97,18 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="hover:text-color-secondary ease-in duration-200"
+                className={`hover:border-b-4 pb-3 ease-in duration-200 ${
+                  activeSection === "contact" ? "pb-3 border-b-4" : ""
+                }`}
               >
                 Contact Us
               </a>
             </li>
             <li>
               <a
-                href="#home"
-                className="hover:text-color-secondary ease-in duration-200 border py-4 px-8 rounded-[10px] border-[#383838]"
+                href="/Company Profile PT KLIN dan PT ASTEK - 2024.pdf" download
+                className={`hover:bg-[#383838] hover:text-white ease-in duration-200 border py-4 px-8 rounded-[10px] border-[#383838] ${
+                  changeColor ? "bg-white text-[#383838] hover:bg-[#ececec] hover:text-[#383838]" : ""} `}
               >
                 Get Company Profile
               </a>
@@ -97,7 +130,7 @@ const Navbar = () => {
         </div>
         <div
           id="menu"
-          className={`bg-color-primary-dark min-h-screen absolute inset-0 ${
+          className={`bg-white min-h-screen absolute inset-0 ${
             menuVisible ? "" : "hidden"
           }`}
         >
@@ -105,7 +138,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#home"
-                className="hover:text-color-secondary ease-in duration-200"
+                className=" ease-in duration-200"
                 onClick={hideMenu}
               >
                 Home
@@ -114,7 +147,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#business"
-                className="hover:text-color-secondary ease-in duration-200"
+                className=" ease-in duration-200"
                 onClick={hideMenu}
               >
                 Business Scope
@@ -123,7 +156,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#project"
-                className="hover:text-color-secondary ease-in duration-200"
+                className=" ease-in duration-200"
                 onClick={hideMenu}
               >
                 Project Portfolio
@@ -132,7 +165,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="hover:text-color-secondary ease-in duration-200"
+                className=" ease-in duration-200"
                 onClick={hideMenu}
               >
                 Contact Us
@@ -141,7 +174,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#home"
-                className="hover:text-color-secondary ease-in duration-200"
+                className=" ease-in duration-200"
                 onClick={hideMenu}
               >
                 Get Company Profile

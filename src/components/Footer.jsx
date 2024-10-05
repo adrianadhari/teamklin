@@ -54,7 +54,7 @@ const Footer = () => {
               reference in laboratory test
             </p>
             <a
-              href="#"
+              href="https://drive.google.com/drive/folders/1cukPCd3-xkKE6YFv6F3H7gz6-Nvp_xnH?usp=drive_link" target="_blank"
               className="px-7 py-4 bg-white text-black rounded-lg font-medium"
             >
               Regulation List

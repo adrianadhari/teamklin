@@ -5,12 +5,12 @@ import { SiGooglemaps } from "react-icons/si";
 
 const ContactUs = () => {
   return (
-    <div className="py-32" id="contact">
+    <section className="md:py-32 py-0" id="contact">
       <div className="container">
-        <div className="flex justify-center space-x-12">
+        <div className="flex justify-center md:flex-row flex-col md:space-x-12">
           <div className="space-y-7">
             <div>
-              <p>CONTACT US</p>
+              <p className="text-xl font-bold">CONTACT US</p>
               <p>
                 Bukit Cimanggu City Blok Q4 No.2
                 <br />
@@ -21,7 +21,9 @@ const ContactUs = () => {
             </div>
             <div className="flex space-x-3 items-center">
               <MdEmail className="text-4xl" />
-              <a href="mailto:prayuda@teamklin.com" target="_blank">prayuda@teamklin.com</a>
+              <a href="mailto:prayuda@teamklin.com" target="_blank">
+                prayuda@teamklin.com
+              </a>
             </div>
             <div className="flex space-x-3 items-center">
               <MdOutlinePhoneInTalk className="text-4xl" />
@@ -31,23 +33,31 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="h-96 border border-black"></div>
-          <div className="space-y-7">
-            <div className="flex space-x-3 items-center">
+          <div className="hidden md:block h-96 border border-black"></div>
+          <div className="space-y-7 mb-9 md:mb-0">
+            <div className="flex mt-7 md:mt-0 space-x-3 items-center">
               <FaWhatsapp className="text-4xl" />
-              <a href="https://wa.me/628118444840" className="rounded-lg px-7 py-3 border border-black" target="_blank">
+              <a
+                href="https://wa.me/628118444840"
+                className="rounded-lg px-7 py-3 border border-black"
+                target="_blank"
+              >
                 WA Admin Klik Disini
               </a>
             </div>
             <div className="flex space-x-3 items-center">
               <SiGooglemaps className="text-4xl" />
-              <a href="https://maps.app.goo.gl/NLEXf374mWJxTgxm7" target="_blank" className="rounded-lg px-7 py-3 border border-black">
+              <a
+                href="https://maps.app.goo.gl/NLEXf374mWJxTgxm7"
+                target="_blank"
+                className="rounded-lg px-7 py-3 border border-black"
+              >
                 Rute Maps Klik Disini
               </a>
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1401.4258193939816!2d106.78193331610923!3d-6.543038802022297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c3861f4136eb%3A0x5a253fc6bcc3b5a6!2sBlk.%20Q4%20Blok%20Q4%20No.2%2C%20RT.01%2FRW.10%2C%20Mekarwangi%2C%20Kec.%20Tanah%20Sereal%2C%20Kota%20Bogor%2C%20Jawa%20Barat%2016168!5e0!3m2!1sen!2sid!4v1727987672256!5m2!1sen!2sid"
-              width="400"
+              width="100%"
               height="300"
               allowFullScreen=""
               loading="lazy"
@@ -56,7 +66,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -10,7 +10,7 @@ import background4 from "../assets/img/bg4.png";
 
 const ProjectPortfolio = () => {
   return (
-    <div className="py-30" id="project">
+    <section className="py-30" id="project">
       <div className="container">
         <div className="mb-48">
           <h1
@@ -19,7 +19,7 @@ const ProjectPortfolio = () => {
           >
             Pembuatan Dokumen Lingkungan dan Pengurusan Izin
           </h1>
-          <div className="grid grid-cols-2 gap-14 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-items-center">
             <div>
               <img src={dokumen} alt="Dokumen Lingkungan" className="mx-auto" />
               <h3 className="text-2xl font-bold mb-3 text-center">
@@ -82,7 +82,7 @@ const ProjectPortfolio = () => {
           >
             Pembuatan Dokumen Lingkungan dan Pengurusan Izin
           </h1>
-          <div className="grid grid-cols-2 gap-14 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-items-center">
             <div>
               <img src={dokumen} alt="Dokumen Lingkungan" className="mx-auto" />
               <h3 className="text-2xl font-bold mb-3 text-center">
@@ -152,7 +152,7 @@ const ProjectPortfolio = () => {
           >
             Project Lainnya
           </h1>
-          <div className="grid grid-cols-2 gap-14 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-items-center">
             <div>
               <img
                 src={rekayasa}
@@ -229,7 +229,7 @@ const ProjectPortfolio = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

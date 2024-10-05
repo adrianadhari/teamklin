@@ -12,8 +12,23 @@ export default {
           DEFAULT: "20px",
           md: "100px"
         }
-      }
+      },
+      keyframes: {
+        underlineHover: {
+          '0%': {
+            borderBottomWidth: 0,
+          },
+          '100%': {
+            borderBottomWidth: 2,
+          },
+        },
+      },
+      animation: {
+        'underlineHover': 'underlineHover 0s ease-in-out',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animate')
+  ],
 }
