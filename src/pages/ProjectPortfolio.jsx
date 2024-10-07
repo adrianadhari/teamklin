@@ -10,7 +10,7 @@ import background4 from "../assets/img/bg4.png";
 
 const ProjectPortfolio = () => {
   return (
-    <section className="py-30" id="project">
+    <section className="py-32 bg-slate-50" id="project">
       <div className="container">
         <div className="mb-48">
           <h1
