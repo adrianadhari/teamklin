@@ -1,4 +1,4 @@
-import delivering from "../assets/img/delivering.png";
+import deliveringg from "../assets/img/deliveringg.png";
 import logoCenter from "../assets/img/logo-center.png";
 import checklist from "../assets/img/checklist.png";
 import partner1 from "../assets/img/partners/1.png";
@@ -14,6 +14,7 @@ import partner10 from "../assets/img/partners/10.png";
 import partner11 from "../assets/img/partners/11.png";
 import partner12 from "../assets/img/partners/12.png";
 import arrow from "../assets/img/arrow.png";
+import arrowleft from "../assets/img/arrow-left.png";
 
 const Home = () => {
   return (
@@ -27,20 +28,24 @@ const Home = () => {
           </h1>
 
           <div className="flex md:flex-row flex-col justify-between items-center py-7">
-            <div
-              className="flex flex-col space-y-4 items-center mt-8s
-              md:-mt-10"
-            >
+            <div className="flex flex-col space-y-4 items-center md:-mt-10">
               <img
-                src={delivering}
-                alt="Delivering Environmental Issue Solutions"
-                className="animate__animated animate__fadeInLeftBig animate__slow w-full"
+                src={arrowleft}
+                alt="Client Trusted"
+                className="mt-9 md:mt-0 animate__animated animate__fadeInLeftBig  animate__slow"
               />
-              <p className="max-w-xs font-bold text-xl leading-relaxed text-justify animate__animated animate__fadeInLeftBig animate__slower">
+              <div className="shadow-xl rounded-3xl mt-5 overflow-hidden">
+              <img
+                src={deliveringg}
+                alt="Delivering Environmental Issue Solutions"
+                className="animate__animated animate__fadeInLeftBig animate__slow w-[340px]"
+              />
+              <p className="max-w-[340px] font-bold text-lg p-5 leading-relaxed text-justify animate__animated animate__fadeInLeftBig animate__slower">
                 Memberikan solusi atas segala permasalahan lingkugan anda dengan
                 pilihan tepat, terbaik, dan efisien. Sehingga menghasilkan
                 proses yang efektif.
               </p>
+              </div>
             </div>
             <img src={logoCenter} alt="Logo KLIN" className="hidden md:block" />
             <div className="flex flex-col space-y-4 items-start mt-0 md:-mt-64 ">
@@ -52,7 +57,7 @@ const Home = () => {
               <p className="font-bold text-xl animate__animated animate__fadeInRightBig  animate__slow">
                 Mengapa anda memilih kami?
               </p>
-              <div className="flex flex-col space-y-3 p-3 shadow rounded-xl animate__animated animate__fadeInRightBig  animate__slower">
+              <div className="flex flex-col space-y-3 p-5 shadow-xl rounded-3xl animate__animated animate__fadeInRightBig  animate__slower">
                 <div className="flex items-center space-x-3">
                   <img src={checklist} alt="Checlist" />
                   <p className="font-bold text-xl">INTEGRITAS</p>
