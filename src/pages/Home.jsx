@@ -34,17 +34,17 @@ const Home = () => {
                 alt="Client Trusted"
                 className="mt-9 md:mt-0 animate__animated animate__fadeInLeftBig  animate__slow"
               />
-              <div className="shadow-xl rounded-3xl mt-5 overflow-hidden">
-              <img
-                src={deliveringg}
-                alt="Delivering Environmental Issue Solutions"
-                className="animate__animated animate__fadeInLeftBig animate__slow w-[340px]"
-              />
-              <p className="max-w-[340px] font-bold text-lg p-5 leading-relaxed text-justify animate__animated animate__fadeInLeftBig animate__slower">
-                Memberikan solusi atas segala permasalahan lingkugan anda dengan
-                pilihan tepat, terbaik, dan efisien. Sehingga menghasilkan
-                proses yang efektif.
-              </p>
+              <div className="shadow-xl rounded-3xl mt-5 overflow-hidden animate__animated animate__fadeInLeftBig animate__slower">
+                <img
+                  src={deliveringg}
+                  alt="Delivering Environmental Issue Solutions"
+                  className=" w-[340px]"
+                />
+                <p className="max-w-[340px] font-bold text-lg p-5 leading-relaxed text-justify">
+                  Memberikan solusi atas segala permasalahan lingkungan anda
+                  dengan pilihan tepat, terbaik, dan efisien. Sehingga
+                  menghasilkan proses yang efektif.
+                </p>
               </div>
             </div>
             <img src={logoCenter} alt="Logo KLIN" className="hidden md:block" />
