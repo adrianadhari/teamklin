@@ -64,7 +64,7 @@ const Home = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <img src={checklist} alt="Checlist" />
-                  <p className="font-bold text-xl">AKUNTABILITIAS</p>
+                  <p className="font-bold text-xl">AKUNTABILITAS</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <img src={checklist} alt="Checlist" />
