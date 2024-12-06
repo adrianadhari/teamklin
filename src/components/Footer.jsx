@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-10">
           <div className="desc">
             <h3 className="font-bold text-xl">
-              PT. KHABIB LINGKUNGAN INDONESIA
+              PT. KHABIR LINGKUNGAN INDONESIA
             </h3>
             <p className="leading-relaxed my-5">
               “Our Company Identity is Our Business
