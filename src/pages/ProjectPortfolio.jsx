@@ -173,14 +173,15 @@ const ProjectPortfolio = () => {
                 </li>
                 <li>Pembuatan dan Supervisi Lab Produk PT Solenis</li>
                 <li>Pembuatan Incinerator B3 PT Anugerah Berkah Ilahi</li>
+                <li>Dewatering lumpur clarifier di PT. Fajar paper, Bekasi</li>
+                <li>STP 10 m3/hari di Restoran Sentosa Seafood, Bogor</li>
+                <li>STP 10 m3/hari di Restoran Fogo Brazillian, Bogor</li>
                 <li>
-                  Pembuatan Desain IPAL PT Kimia Farma Plant Banjaran Bandung -
-                  Kap. 350 cmd
+                  Service and maintenance STP 12 m3/hari di Ranch Market,
+                  Jakarta
                 </li>
-                <li>
-                  Pembuatan IPAL PT PLN Punagaya Sulawesi Selatan - Kap. 3 cmd
-                </li>
-                <li>Pembuatan IPAL PT Kino Plant Cikande - Kap. 24 cmd</li>
+                <li>Slurry Handling di Adaro, Kalimantan</li>
+                <li>Slurry Handling di Nusa Halmahera Minerals, Halmahera</li>
               </ul>
             </div>
             <div>
@@ -223,7 +224,9 @@ const ProjectPortfolio = () => {
                 className="text-4xl text-white font-bold text-center bg-opacity-75 px-10 py-14 rounded-lg w-fit bg-cover"
                 style={{ backgroundImage: `url(${background4})` }}
               >
-                “The Earth is What We All Have in Common”<br/>-wendell berry-
+                “The Earth is What We All Have in Common”
+                <br />
+                -wendell berry-
               </h1>
             </div>
           </div>
