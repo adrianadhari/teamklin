@@ -106,7 +106,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/Company Profile PT KLIN dan PT ASTEK - 2024.pdf" download
+                href="/Company Profile PT KLIN - Februari 2025.pdf" download
                 className={`hover:bg-[#383838] hover:text-white ease-in duration-200 border py-4 px-8 rounded-[10px] border-[#383838] ${
                   changeColor ? "bg-white text-[#383838] hover:bg-[#ececec] hover:text-[#383838]" : ""} `}
               >
